@@ -2,7 +2,7 @@ import image from './assets/emoji.svg';
 
 function App() {
   return (
-    <div className="h-screen flex justify-center items-center bg-[#50b4e6]">
+    <div className="h-screen flex justify-center items-center bg-[#54b3a7]">
       <img
         src={image}
         alt="man with pc"
