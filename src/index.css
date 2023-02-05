@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body::-webkit-scrollbar {
+  @apply w-2
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-[#252a2f80]
+}
