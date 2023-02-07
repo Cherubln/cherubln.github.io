@@ -1,6 +1,11 @@
+import wrapper from '../assets/logoWrapper.svg'
 const Logo = ({ className }) => (
-  <div aria-label="Web Logo" className={`${className} text-2xl font-semibold capitalize text-transparent bg-clip-text bg-gradient-to-r from-orange-700 via-orange-600 to-orange-400  md:after:block md:after:mt-1 md:after:w-0 md:after:h-0.5 md:after:hover:w-full md:after:duration-300 md:after:hover:bg-[#f75b23] cursor-pointer`} >
+  <div
+    aria-label='Web Logo'
+    className={`${className} relative text-2xl font-semibold capitalize text-transparent bg-clip-text bg-gradient-to-r from-orange-700 via-orange-600 to-orange-400  md:after:block cursor-pointer py-3 px-2`}
+  >
     Cherubin
+    <img src={wrapper} alt='circle image' className='absolute left-0 top-0' />
   </div>
 )
 
