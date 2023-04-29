@@ -4,7 +4,6 @@ import NavItem from './NavItem'
 
 const NavLinks = ({ className }) => {
   const [isActive, setIsActive] = useState('')
-
   return (
     <ul className={`${className} px-4 flex-row gap-4 items-center`}>
       {items.map((item) => (

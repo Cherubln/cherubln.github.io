@@ -7,7 +7,7 @@ const NavItem = ({ item, isActive, setIsActive }) => {
     >
       <a
         href={`#${item.toLowerCase()}`}
-        className={`relative after:absolute after:-bottom-1 after:left-1/2 after:scale-0 after:w-1 after:rounded-full after:h-1 after:duration-300 after:bg-[#f75b23] sm:after:hidden ${
+        className={`w-full relative after:absolute after:-bottom-1 after:left-1/2 after:scale-0 after:w-1 after:rounded-full after:h-1 after:duration-300 after:bg-[#f75b23] sm:after:hidden ${
           isActive === item && 'text-[#0f1419] dark:text-white after:scale-105'
         }`}
         onClick={() => setIsActive(item)}

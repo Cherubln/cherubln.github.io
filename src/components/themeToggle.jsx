@@ -26,10 +26,13 @@ const toggleTheme = () => {
 
   return (
     <button
+      aria-labelledby='appearance'
       className='inline-flex items-center md:mx-auto  border-2 rounded-full md:gap-2 p-2 md:py-2 md:px-3 border-[#252a2f80] hover:border-[#252a2f] font-semibold md:duration-300'
       onClick={() => setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))}
     >
-      <span className='hidden md:inline'>Appearance</span>
+      <span id='appearance' className='hidden md:inline'>
+        Appearance
+      </span>
       <HiMoon
         className={`${
           theme === 'dark' ? 'w-0' : 'w-auto'

@@ -3,12 +3,10 @@ import NavLinks from './NavLinks'
 
 const NavMenu = () => {
   return (
-    <div>
-      <nav className={`flex flex-row items-center`}>
-        <NavLinks className={`hidden sm:flex`} />
-        <ToggleTheme />
-      </nav>
-    </div>
+    <nav className={`flex flex-row items-center`}>
+      <NavLinks className={`hidden sm:flex`} />
+      <ToggleTheme />
+    </nav>
   )
 }
 export default NavMenu

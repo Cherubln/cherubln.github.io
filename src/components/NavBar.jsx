@@ -3,7 +3,7 @@ import NavMenu from './NavMenu'
 
 const NavBar = () => {
   return (
-    <header className='fixed top-0 w-full flex justify-between items-center px-12 pt-12'>
+    <header className='sticky top-0 w-full flex justify-between items-center py-16 h-40'>
       <Logo />
       <NavMenu />
     </header>
