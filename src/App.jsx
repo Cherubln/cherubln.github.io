@@ -1,4 +1,3 @@
-import image from './assets/emoji.svg'
 import Footer from './components/Footer'
 import NavBar from './components/NavBar'
 import Home from './pages/Home'

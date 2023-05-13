@@ -10,10 +10,7 @@ body::-webkit-scrollbar {
   @apply w-2;
 }
 body {
-  font-family: 'Optimistic Display Medium', -apple-system, ui-sans-serif,
-    system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
-    Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-    Noto Color Emoji;
+  font-family: optimistic_displaymedium, Arial, sans-serif;
 }
 .dark > body::-webkit-scrollbar-track {
   background-color: #0f1419;
