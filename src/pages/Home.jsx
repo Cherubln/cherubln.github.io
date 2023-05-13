@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className='h-[calc(100vh-5.5rem)] flex flex-col lg:flex-row gap-8 lg:justify-between items-center'>
       <div className='order-2 lg:order-1'>
-        <div className='flex gap-6 items-center pb-6 md:mb-8'>
+        <div className='flex gap-6 items-center pb-6 md:mb-3'>
           <div className='bg-gray-500 w-40 h-1'></div>
           <a href='https://twitter.com/cherubln' target='_blank'>
             <BsTwitter className='w-6 h-6 hover:animate-pulse' />
