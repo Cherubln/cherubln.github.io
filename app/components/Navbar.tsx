@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Logo from "./LogoWrapper";
 import Link from "next/link";
 
@@ -11,6 +12,11 @@ const Navbar = ({
   activeTab: string;
   setActiveTab: (activeTab: string) => void;
 }) => {
+  useEffect(() => {
+    if (window.scrollY > 0) {
+      console.log(true);
+    }
+  });
   return (
     <header className="navbar sticky top-0 z-50  bg-base-100 justify-between pt-6 pb-2 px-8 md:px-16">
       <Logo />
