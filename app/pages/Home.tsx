@@ -28,7 +28,7 @@ const Home = () => {
           </span>{" "}
         </h1>
       </div>
-      <Image src={picture} alt="hero" className="order-1 lg:order-2" />
+      <Image src={picture} alt="hero section" className="order-1 lg:order-2" />
     </div>
   );
 };
