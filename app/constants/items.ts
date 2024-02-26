@@ -1,1 +1,2 @@
-export default ["Skills", "Experience", "Work", "Contact"];
+const items = ["Skills", "Experience", "Work", "Contact"];
+export default items;

@@ -66,7 +66,10 @@ const Navbar = ({
           >
             {tabs.map((item) => {
               return (
-                <li className="list-none list-outside  font-semibold   cursor-pointer">
+                <li
+                  key={item}
+                  className="list-none list-outside  font-semibold   cursor-pointer"
+                >
                   <Link
                     href={`#${item}`}
                     className={`w-full relative  ${

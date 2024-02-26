@@ -20,7 +20,7 @@ const Home = () => {
         </div>
         <h1 className="text-3xl md:text-5xl leading-relaxed md:leading-normal">
           Hi there,
-          <br /> I'm Cherubin
+          <br /> I&apos;m Cherubin
           <br />
           <span className="relative after:block after:left-0 after:h-full after:top-0 after:absolute after:bg-base-100 after:right-0 after:animate-progress before:block before:left-0 before:h-full before:top-0 before:absolute before:bg-base-content before:w-0.5  before:z-10 before:animate-[fade_.48s_linear_infinite_alternate,progress_4s_steps(30)_3s_forwards] ">
             Software
