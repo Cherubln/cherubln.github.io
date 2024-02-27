@@ -11,11 +11,11 @@ const SkillComponent = ({ skill }: { skill: SkillType }) => {
       </div>
       <div>
         <p className="flex flex-col">
-          <span className="text-gray-500"> &lt;h3&gt; </span>
-          <span className="ml-3 p-4 border-l border-gray-500">
+          <span className="text-neutral-content/30"> &lt;h3&gt; </span>
+          <span className="ml-3 p-4 border-l border-neutral-content/30">
             {skill.content}
           </span>
-          <span className="text-gray-500">&lt;/h3&gt;</span>
+          <span className="text-neutral-content/30">&lt;/h3&gt;</span>
         </p>
       </div>
     </div>
