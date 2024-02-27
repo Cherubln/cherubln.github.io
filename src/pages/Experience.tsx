@@ -155,9 +155,10 @@ const ExperienceSection = () => {
                     </a>
                   </span>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Harum, est!
+                <p className="max-w-xl">
+                  Worked on development of a travel and hotel booking platform,
+                  participated in UI designs, and helped developing an internal
+                  human resource management application for external company.
                 </p>
                 <div className="flex gap-3 flex-wrap">
                   <span className="badge badge-info">JavaScript</span>
