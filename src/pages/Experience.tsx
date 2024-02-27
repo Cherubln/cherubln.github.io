@@ -47,8 +47,11 @@ const ExperienceSection = () => {
                   </span>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Harum, est!
+                  Developing and maintaining front-end solutions for web
+                  applications, particularly in the fintech domain. This
+                  involves creating client and internal data visualization
+                  components using React/TypeScript and the Tailwind CSS
+                  framework.
                 </p>
                 <div className="flex gap-3 flex-wrap">
                   <span className="badge badge-info">JavaScript</span>
