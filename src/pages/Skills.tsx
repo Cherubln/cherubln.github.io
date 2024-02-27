@@ -20,9 +20,8 @@ const Skills = () => {
             <p className="flex flex-col">
               <span className="text-gray-500"> &lt;h3&gt; </span>
               <span className="ml-3 p-4 border-l border-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Laboriosam nihil minus deserunt fugit molestiae quia, delectus
-                nobis. Fuga, non quod.
+                Skilled in both dynamic and static programming: Python,
+                JavaScript, TypeScript.
               </span>
               <span className="text-gray-500">&lt;/h3&gt;</span>
             </p>
@@ -39,9 +38,8 @@ const Skills = () => {
             <p className="flex flex-col">
               <span className="text-gray-500"> &lt;h3&gt; </span>
               <span className="ml-3 p-4 border-l border-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Laboriosam nihil minus deserunt fugit molestiae quia, delectus
-                nobis. Fuga, non quod.
+                Over 3 years of development experience in building web apps with
+                HTML, CSS, JS, React and NextJS.
               </span>
               <span className="text-gray-500">&lt;/h3&gt;</span>
             </p>
@@ -58,9 +56,8 @@ const Skills = () => {
             <p className="flex flex-col">
               <span className="text-gray-500"> &lt;h3&gt; </span>
               <span className="ml-3 p-4 border-l border-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Laboriosam nihil minus deserunt fugit molestiae quia, delectus
-                nobis. Fuga, non quod.
+                Familiarity with react-native framework for developing mobile
+                app solutions.
               </span>
               <span className="text-gray-500">&lt;/h3&gt;</span>
             </p>
