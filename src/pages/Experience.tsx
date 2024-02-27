@@ -101,9 +101,10 @@ const ExperienceSection = () => {
                     </a>
                   </span>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Harum, est!
+                <p className="max-w-xl">
+                  Developed front-end web app solutions for e-commerce AI
+                  chatbot conversational based products recommendations using
+                  VueJS, React and Python.
                 </p>
                 <div className="flex gap-3 flex-wrap">
                   <span className="badge badge-info">JavaScript</span>
