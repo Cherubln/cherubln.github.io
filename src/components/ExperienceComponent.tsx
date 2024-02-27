@@ -41,7 +41,7 @@ const ExperienceComponent = ({
               </span>
             </div>
             <p className="max-w-xl">{experience.description}</p>
-            <div className="flex gap-3 flex-wrap">
+            <div className="max-w-xl flex gap-3 flex-wrap">
               {experience.skills.map((skill) => (
                 <span className="badge badge-info">{skill}</span>
               ))}
