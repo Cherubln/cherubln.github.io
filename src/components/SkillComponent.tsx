@@ -1,10 +1,4 @@
-import { IconType } from "react-icons";
-
-type SkillType = {
-  Icon: IconType;
-  heading: string;
-  content: string;
-};
+import type { SkillType } from "../types/SkillType";
 
 const SkillComponent = ({ Icon, heading, content }: SkillType) => {
   return (

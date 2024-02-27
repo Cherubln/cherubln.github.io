@@ -11,7 +11,7 @@ const Skills = () => {
         {skillSet.map((skill) => {
           return (
             <SkillComponent
-              Icon={skill.icon}
+              Icon={skill.Icon}
               heading={skill.heading}
               content={skill.content}
             />
