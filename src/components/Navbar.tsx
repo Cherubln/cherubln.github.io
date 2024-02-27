@@ -10,7 +10,7 @@ const Navbar = ({
   setActiveTab: (activeTab: string) => void;
 }) => {
   return (
-    <header className="navbar sticky top-0 z-50  bg-base-100 justify-between pt-6 pb-2 px-8 md:px-16">
+    <header className="navbar sticky top-0 z-50  bg-base-100 justify-between pt-6 pb-2 px-8 md:px-16 drop-shadow-lg sm:drop-shadow-none">
       <Logo />
       <nav>
         <ul className={`hidden sm:flex  flex-row gap-10 items-center`}>
