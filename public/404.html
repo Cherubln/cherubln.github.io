@@ -52,6 +52,7 @@
         transition: all 200ms;
         border: 1px solid #ff865b;
         border-radius: 10px;
+        cursor: pointer;
       }
       .container-icon:hover {
         background-color: #ff865b;
@@ -82,7 +83,7 @@
     </style>
   </head>
   <body>
-    <img src="404trans.png" class="image" />
+    <img src="404trans.png" class="image" alt="404" />
     <div class="content">
       <p class="text">
         Sorry, we can't find that page! <br />
@@ -102,8 +103,15 @@
             ></path>
           </svg>
         </div>
-        <a href="/" class="link">Go back</a>
+        <span class="link">Go back</span>
       </div>
     </div>
+    <script>
+      document
+        .querySelector(".container-icon")
+        .addEventListener("click", () => {
+          history.back();
+        });
+    </script>
   </body>
 </html>
