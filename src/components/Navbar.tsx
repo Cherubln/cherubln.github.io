@@ -1,4 +1,5 @@
 import Logo from "./LogoWrapper";
+import { HiMenuAlt2 } from "react-icons/hi";
 
 const tabs = ["Skills", "Work", "Experience", "Contact"];
 
@@ -13,7 +14,7 @@ const Navbar = ({
     <header className="navbar sticky top-0 z-50  bg-base-100 justify-between pt-6 pb-2 px-8 md:px-16 drop-shadow-lg sm:drop-shadow-none">
       <Logo />
       <nav>
-        <ul className={`hidden sm:flex  flex-row gap-10 items-center`}>
+        <ul className={`hidden sm:flex  flex-row gap-10 items-start`}>
           {tabs.map((item, id) => {
             return (
               <li
@@ -43,22 +44,9 @@ const Navbar = ({
             );
           })}
         </ul>
-        <div className="sm:hidden dropdown dropdown-bottom dropdown-end">
+        <div className="order-2 sm:hidden dropdown dropdown-bottom dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />
-            </svg>
+            <HiMenuAlt2 className="h-8 w-8" />
           </div>
           <ul
             tabIndex={0}
@@ -68,7 +56,7 @@ const Navbar = ({
               return (
                 <li
                   key={item}
-                  className="list-none list-outside  font-semibold   cursor-pointer"
+                  className="list-none list-outside p-1 font-semibold   cursor-pointer"
                 >
                   <a
                     href={`#${item}`}

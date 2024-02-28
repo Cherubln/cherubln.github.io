@@ -3,7 +3,7 @@ import type { SkillType } from "../types/SkillType";
 const SkillComponent = ({ skill }: { skill: SkillType }) => {
   return (
     <div className="border border-primary p-8 flex flex-col gap-4">
-      <div className="flex gap-3">
+      <div className="flex gap-5 items-center">
         <skill.Icon className="w-16 h-auto" />
         <h2 className="text-2xl leading-none font-bold">
           <span>{skill.heading}</span>
