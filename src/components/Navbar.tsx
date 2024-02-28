@@ -19,16 +19,15 @@ const Navbar = ({
             return (
               <li
                 key={item}
-                className={`relative list-none list-outside  font-semibold   cursor-pointer  before:block before:-top-3 before:right-0 before:absolute before:text-xs before:italic   hover:before:text-primary before:w-4 before:h-full sm:border-none sm:after:block sm:after:mt-1 sm:after:w-0 sm:after:h-0.5 sm:after:hover:w-full sm:after:duration-300 sm:after:bg-primary ${
-                  activeTab === item
-                    ? "before:text-primary"
-                    : "before:text-neutral-content/40"
-                } ${id === 0 && "before:content-['01']"} ${
-                  id === 1 && "before:content-['02']"
-                } ${id === 2 && "before:content-['03']"} ${
-                  id === 3 && "before:content-['04']"
-                }`}
+                className={`relative list-none list-outside group font-semibold cursor-pointer  sm:border-none sm:after:block sm:after:mt-1 sm:after:w-0 sm:after:h-0.5 sm:after:hover:w-full sm:after:duration-300 sm:after:bg-primary`}
               >
+                <span
+                  className={`block -top-3 right-0 absolute text-xs duration-300 group-hover:text-primary italic w-4 h-full  ${
+                    activeTab === item ? "text-primary" : "text-base-content/40"
+                  }`}
+                >
+                  0{++id}
+                </span>
                 <a
                   href={`#${item}`}
                   className={`w-full relative  ${

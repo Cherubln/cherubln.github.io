@@ -16,7 +16,7 @@ const FooterSection = () => {
             </label>
             <div
               tabIndex={0}
-              className="card compact dropdown-content z-[1] shadow bg-base-200 rounded-box w-52"
+              className="card compact dropdown-content z-[1] shadow bg-neutral rounded-box w-52"
             >
               <div className="card-body">
                 <p>

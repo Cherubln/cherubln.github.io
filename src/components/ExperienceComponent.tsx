@@ -8,7 +8,7 @@ const ExperienceComponent = ({
   expanded?: boolean;
 }) => {
   return (
-    <div className="collapse collapse-plus bg-base-200 rounded-md">
+    <div className="collapse collapse-plus bg-neutral ">
       <input type="radio" name="my-accordion-2" defaultChecked={expanded} />
       <div className="collapse-title text-xl font-medium">
         <div className="flex flex-col sm:flex-row sm:justify-between  text-sm sm:items-center">
@@ -43,7 +43,9 @@ const ExperienceComponent = ({
             <p className="max-w-xl">{experience.description}</p>
             <div className="max-w-xl flex gap-3 flex-wrap">
               {experience.skills.map((skill) => (
-                <span className="badge badge-info">{skill}</span>
+                <span key={skill} className="badge badge-info">
+                  {skill}
+                </span>
               ))}
             </div>
           </div>

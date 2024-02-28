@@ -5,6 +5,7 @@ import Skills from "./pages/Skills";
 import Navbar from "./components/Navbar";
 import Footer from "./pages/Footer";
 import Contact from "./pages/Contact";
+import Project from "./pages/Projects";
 
 function App() {
   const [activeTab, setActiveTab] = useState("");
@@ -14,6 +15,7 @@ function App() {
       <div className="px-8 md:px-16">
         <Home />
         <Skills />
+        <Project />
         <Experience />
         <Contact />
         <Footer />
