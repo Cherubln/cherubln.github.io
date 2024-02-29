@@ -4,15 +4,15 @@ import { ProjectType } from "../types/ProjectType";
 
 const Project = ({ project }: { project: ProjectType }) => {
   return (
-    <div className="card card-compact rounded-md  max-w-sm bg-base-300 shadow-xl group cursor-pointer">
+    <div className="card card-compact rounded-md  max-w-sm h-80 bg-base-300 shadow-xl group cursor-pointer">
       <figure>
         <img
           src={project.image}
           alt={project.name}
-          className="group-hover:scale-105 transition-all duration-300 w-full h-52 object-cover"
+          className="group-hover:scale-105 transition-all duration-300 w-full h-full object-cover"
         />
       </figure>
-      <div className="card-body h-32 bg-neutral">
+      <div className="card-body bg-neutral">
         <h2 className="card-title font-light">{project.name}</h2>
         <p className="text-sm capitalize">{project.category} Development</p>
         <div className="card-actions justify-end">
