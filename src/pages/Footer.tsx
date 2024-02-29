@@ -1,6 +1,8 @@
 import logo from "../assets/logo.png";
 
 const FooterSection = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer items-center p-4  text-neutral-content">
       <aside className="items-center grid-flow-col">
@@ -35,7 +37,7 @@ const FooterSection = () => {
               </div>
             </div>
           </div>
-          <span>© 2024</span>
+          <span>© {currentYear}</span>
         </div>
       </aside>
       <nav className="hidden md:grid grid-flow-col gap-x-4 place-self-center justify-self-end">

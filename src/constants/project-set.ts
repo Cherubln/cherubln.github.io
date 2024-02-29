@@ -5,36 +5,42 @@ import uplus from "../assets/uplus-web.png";
 import helpCenter from "../assets/helpcenter.png";
 import clientPortal from "../assets/client-data.png";
 import gameHub from "../assets/game-hub.png";
+import selfCare from "../assets/self-care.png";
 
 const projectSet: ProjectType[] = [
   {
     name: "Flora Fables",
-    category: "web app",
+    category: "web",
     image: floraFables,
   },
   {
     name: "Help Center",
-    category: "website",
+    category: "web",
     image: helpCenter,
   },
   {
+    name: "Self-Care",
+    category: "mobile",
+    image: selfCare,
+  },
+  {
     name: "Game Portal",
-    category: "web app",
+    category: "web",
     image: gameHub,
   },
   {
     name: "Data visualization",
-    category: "web app",
+    category: "web",
     image: clientPortal,
   },
   {
     name: "Uplus Website",
-    category: "website",
+    category: "web",
     image: uplus,
   },
   {
     name: "Dialogue",
-    category: "web app",
+    category: "web",
     image: dialogue,
   },
 ];

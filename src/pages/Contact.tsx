@@ -10,7 +10,7 @@ const Contact = () => {
 
         <a
           href="mailto:cherubinkubwayo@gmail.com"
-          className="link link-primary"
+          className="link link-primary self-start"
         >
           cherubinkubwayo@gmail.com
         </a>

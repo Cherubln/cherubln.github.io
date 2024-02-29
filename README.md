@@ -22,7 +22,6 @@
 
 ## About The Project
 
-
 Welcome to my portfolio! This project showcases my skills, projects, and experience as a software developer. Whether you're a potential employer, fellow developer, or just curious, I hope you find something interesting here.
 
 <p align="right">(<a href="#readme-top">&#x1F51D;</a>)</p>
