@@ -1,27 +1,19 @@
-import { useState } from "react";
-import Home from "./pages/Home";
-import Experience from "./pages/Experience";
-import Skills from "./pages/Skills";
-import Navbar from "./components/Navbar";
-import Footer from "./pages/Footer";
-import Contact from "./pages/Contact";
-import Project from "./pages/Projects";
+import SingleProject from "./pages/Projects/SingleProject";
+import Root from "./pages/Root";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+  },
+  {
+    path: "/projects/:projectName",
+    element: <SingleProject />,
+  },
+]);
 
 function App() {
-  const [activeTab, setActiveTab] = useState("");
-  return (
-    <div className="container mx-auto ">
-      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="px-8 md:px-16">
-        <Home />
-        <Skills />
-        <Project />
-        <Experience />
-        <Contact />
-        <Footer />
-      </div>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

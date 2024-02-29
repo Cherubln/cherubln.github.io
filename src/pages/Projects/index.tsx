@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Project from "../components/ProjectComponent";
-import ProjectsFilters from "../components/ProjectFilters";
-import useProjects from "../hooks/useProjects";
+import Project from "../../components/ProjectComponent";
+import ProjectsFilters from "../../components/ProjectFilters";
+import useProjects from "../../hooks/useProjects";
 import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectSection = () => {

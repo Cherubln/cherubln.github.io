@@ -1,8 +1,10 @@
 import { MdArrowForwardIos } from "react-icons/md";
 
 import { ProjectType } from "../types/ProjectType";
+import { Link } from "react-router-dom";
 
 const Project = ({ project }: { project: ProjectType }) => {
+  const projectPath = project.name.toLowerCase().split(" ").join("-");
   return (
     <div className="card card-compact rounded-md  max-w-sm h-80 bg-base-300 shadow-xl group cursor-pointer">
       <figure>
@@ -16,9 +18,12 @@ const Project = ({ project }: { project: ProjectType }) => {
         <h2 className="card-title font-light">{project.name}</h2>
         <p className="text-sm capitalize">{project.category} Development</p>
         <div className="card-actions self-end">
-          <p className="flex items-center gap-1 -translate-y-5 opacity-0 text-semibold group-hover:opacity-100 cursor-pointer group-hover:translate-y-0 transition-all duration-300 hover:text-primary">
+          <Link
+            to={`projects/${projectPath}`}
+            className="flex items-center gap-1 -translate-y-5 opacity-0 text-semibold group-hover:opacity-100 cursor-pointer group-hover:translate-y-0 transition-all duration-300 hover:text-primary"
+          >
             <span>Show project</span> <MdArrowForwardIos />
-          </p>
+          </Link>
         </div>
       </div>
     </div>
