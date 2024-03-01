@@ -1,3 +1,4 @@
+import { BsTwitterX } from "react-icons/bs";
 import logo from "../assets/logo.png";
 
 const FooterSection = () => {
@@ -46,7 +47,9 @@ const FooterSection = () => {
           target="_blank"
           className="flex items-center gap-2"
         >
-          <span className="hover:text-primary">X(Twitter)</span>
+          <span className="block hover:text-primary -mb-4">
+            <BsTwitterX size={11} />
+          </span>
         </a>
         <a
           href="https://linkedin.com/in/cherubln/"

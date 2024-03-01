@@ -1,7 +1,6 @@
 import Logo from "./LogoWrapper";
 import { HiMenuAlt2 } from "react-icons/hi";
-
-const tabs = ["Skills", "Work", "Experience", "Contact"];
+import navigations from "../constants/navigations";
 
 const Navbar = ({
   activeTab,
@@ -15,7 +14,7 @@ const Navbar = ({
       <Logo />
       <nav>
         <div className={`hidden sm:flex  flex-row gap-10 items-start`}>
-          {tabs.map((item, id) => {
+          {navigations.map((item, id) => {
             return (
               <a
                 key={item}
@@ -47,7 +46,7 @@ const Navbar = ({
             tabIndex={0}
             className="menu menu-sm dropdown-content  p-2 shadow bg-base-100 rounded-box "
           >
-            {tabs.map((item) => {
+            {navigations.map((item) => {
               return (
                 <li
                   key={item}

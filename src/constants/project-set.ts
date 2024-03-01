@@ -6,6 +6,10 @@ import helpCenterThumbnail from "../assets/helpcenter.png";
 import clientPortalThumbnail from "../assets/client-data.png";
 import gameHubThumbnail from "../assets/game-hub.png";
 import selfCareThumbnail from "../assets/self-care.png";
+import helpCenterScreenShot from "../assets/help-screenshot.png";
+import uplusScreenShot from "../assets/uplus-screenshot.png";
+import gameScreenShot from "../assets/game-screenshot.png";
+import dashooardScreenShot from "../assets/dashboard-screenshot.png";
 
 const projectSet: ProjectType[] = [
   {
@@ -24,7 +28,7 @@ const projectSet: ProjectType[] = [
     description:
       "This is a help center for Uplus company. It aims to improve customer satisfaction, loyalty and retention, as well as reduce customer service costs and increase efficiency. Customers can use it to find answers, solutions and resources for their questions, problems or feedback. They can also learn how to use the products or services better with tutorials, tips and best practices.",
     name: "Help Center",
-    screenshots: "",
+    screenshots: helpCenterScreenShot,
     slug: "help-center",
     stack: ["TS", "React", "Tailwind"],
     thumbnail: helpCenterThumbnail,
@@ -46,7 +50,7 @@ const projectSet: ProjectType[] = [
     description:
       "Game Portal is a useful tool for gamers who want to find and explore different games. It allows users to filter games by supported device (such as PC, console, mobile, etc.) or by genres (such as sports, adventure, puzzle, etc.). Users can also search for a specific game by typing its name or keywords in the search bar. The app supports color mode switch, which means users can choose between light and dark themes according to their preference.",
     name: "Game Portal",
-    screenshots: "",
+    screenshots: gameScreenShot,
     slug: "game-portal",
     sourceCode: "https://github.com/Cherubln/game-portal",
     stack: ["TS", "React", "ChakraUI"],
@@ -56,9 +60,9 @@ const projectSet: ProjectType[] = [
   {
     category: "web",
     description:
-      "I created a dashboard for Uplus clients to visualize their financial and social activities. They can see how much they donated, withdrew, or loaned, and the impact of their donations on the causes they care about. They can also discover insights, patterns, and opportunities to enhance their finances and social impact. This dashboard is useful because it gives them feedback and motivation to keep donating for a better cause. It is convenient when they want to check their balance, monitor their progress, or plan their next steps.",
+      "A dashboard for Uplus clients to visualize their financial and social activities. They can see how much they donated, withdrew, or loaned, and the impact of their donations on the causes they care about. They can also discover insights, patterns, and opportunities to enhance their finances and social impact. This dashboard is useful because it gives them feedback and motivation to keep donating for a better cause. It is convenient when they want to check their balance, monitor their progress, or plan their next steps.",
     name: "Data visualization",
-    screenshots: "",
+    screenshots: dashooardScreenShot,
     slug: "data-visualization",
     stack: ["TS", "React", "Tailwind"],
     thumbnail: clientPortalThumbnail,
@@ -69,7 +73,7 @@ const projectSet: ProjectType[] = [
     description:
       "Uplus is a company that offers innovative and convenient products for various needs. Their website showcases their products, how to access them, their mission and goals, and how people can benefit from using them. The website is designed to be user-friendly, informative, and engaging. It invites visitors to explore the products, learn more about the company, and contact them for any inquiries or feedback.",
     name: "Uplus Website",
-    screenshots: "",
+    screenshots: uplusScreenShot,
     slug: "uplus-website",
     stack: ["JS", "React", "Tailwind"],
     thumbnail: uplusThumbnail,
@@ -78,7 +82,7 @@ const projectSet: ProjectType[] = [
   {
     category: "web",
     description:
-      "Dialogue is a chat app platform that lets users chat with each other in real time. Users can create or access their account and start conversations with others. Dialogue is helpful for anyone who wants to keep in touch with their contacts, whether they are friends, family, coworkers, or anyone else. It is convenient when users need to send messages fast and smoothly, without any delays or interruptions. Dialogue is a simple and effective solution for online communication.",
+      "Dialogue is a chat app platform that lets users chat with each other in real time. Users can create or access their account and start conversations with others. Dialogue is helpful for anyone who wants to keep in touch with their contacts, whether they are friends, family, coworkers, or anyone else.",
     name: "Dialogue",
     screenshots: "",
     slug: "dialogue",

@@ -3,7 +3,7 @@ import picture from "../assets/hero.png";
 
 const Home = () => {
   return (
-    <div className="min-h-[calc(100vh-5.5rem)] flex flex-col lg:flex-row gap-8 justify-between items-center py-16">
+    <div className="min-h-[calc(100vh-5.5rem)] lg:min-h-full flex flex-col lg:flex-row gap-8 justify-between items-center py-16">
       <div className="order-2 lg:order-1">
         <div className="flex gap-6 items-center pb-6 md:mb-3">
           <div className="bg-gray-500 w-40 h-1"></div>

@@ -7,14 +7,15 @@ import Footer from "../Footer";
 import { Link, useParams } from "react-router-dom";
 import projectSet from "../../constants/project-set";
 import suggestNextProject from "../../helpers/suggestNextProject";
+import NotFound from "../../components/NotFound";
 
 const SingleProject = () => {
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-
   const { projectName } = useParams();
   const project = projectSet.find((project) => project.slug === projectName);
   const nextProject = suggestNextProject(project?.slug);
 
+  if (!project) return <NotFound />;
   return (
     <div key={projectName} className="container mx-auto ">
       <header className="navbar sticky top-0 z-50  bg-base-100 justify-between pt-6 pb-2 px-8 md:px-16 drop-shadow-lg sm:drop-shadow-none">
@@ -62,7 +63,7 @@ const SingleProject = () => {
                 <h3 className="text-sm font-semibold mb-3 uppercase">Stack</h3>
                 <ul className="steps steps-vertical md:steps-horizontal step-primary">
                   {project?.stack.map((tech) => (
-                    <li className="step step-primary capitalize">{tech}</li>
+                    <li className=" step step-primary capitalize">{tech}</li>
                   ))}
                 </ul>
               </div>
@@ -111,7 +112,7 @@ const SingleProject = () => {
             </div>
           </div>
         </div>
-        <div className="mockup-browser border border-base-300 bg-neutral my-20">
+        <div className="mockup-browser border border-base-300 bg-neutral my-10">
           <div className="mockup-browser-toolbar">
             <div className="input border border-base-300 bg-neutral">
               {project?.website || "http://localhost:{PORT}"}
