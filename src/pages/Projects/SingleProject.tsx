@@ -10,6 +10,7 @@ import suggestNextProject from "../../helpers/suggestNextProject";
 
 const SingleProject = () => {
   window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+
   const { projectName } = useParams();
   const project = projectSet.find((project) => project.slug === projectName);
   const nextProject = suggestNextProject(project?.slug);
@@ -97,7 +98,7 @@ const SingleProject = () => {
         <div className="mockup-browser border border-base-300 bg-neutral">
           <div className="mockup-browser-toolbar">
             <div className="input border border-base-300 bg-neutral">
-              https://flora-flables.com
+              https://{project?.slug}.com
             </div>
           </div>
           <div className="flex justify-center  border-t border-base-300 bg-neutral">
@@ -109,7 +110,7 @@ const SingleProject = () => {
           </div>
         </div>
         <div className="ml-auto mt-8 mb-16 group hover:cursor-pointer card card-compact w-72 h-32 bg-base-300 shadow-xl image-full">
-          <figure>
+          <figure className="opacity-0 group-hover:opacity-100 transition-all duration-500">
             <img src={nextProject.image} alt={nextProject.name} />
           </figure>
           <div className="card-body">
@@ -119,9 +120,10 @@ const SingleProject = () => {
               <Link
                 to={`/projects/${nextProject.slug}`}
                 unstable_viewTransition
-                className="flex items-center gap-1 -translate-y-5 opacity-0 text-semibold group-hover:opacity-100 cursor-pointer group-hover:translate-y-0 transition-all duration-300 hover:text-primary"
+                className="flex items-center gap-2 text-semibold cursor-pointer hover:text-primary"
               >
-                <span>Show project</span> <MdArrowForwardIos />
+                <span>Show</span>
+                <FaArrowRight className="-translate-x-2 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 transition-all duration-300" />
               </Link>
             </div>
           </div>
