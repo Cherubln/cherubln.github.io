@@ -1,5 +1,5 @@
 import Logo from "../../components/LogoWrapper";
-import { MdArrowForwardIos, MdOutlineArrowBackIosNew } from "react-icons/md";
+import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { FaArrowRight, FaGithub } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 
