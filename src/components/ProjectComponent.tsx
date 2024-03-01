@@ -8,7 +8,7 @@ const Project = ({ project }: { project: ProjectType }) => {
     <div className="card card-compact rounded-lg  max-w-sm h-80 bg-base-300 shadow-xl group cursor-pointer overflow-hidden">
       <figure>
         <img
-          src={project.image}
+          src={project.thumbnail}
           alt={project.name}
           className="group-hover:scale-105 transition-all duration-300 w-full h-full object-cover bg-neutral-content"
         />

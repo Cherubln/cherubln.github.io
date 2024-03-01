@@ -52,58 +52,76 @@ const SingleProject = () => {
           </div>
           <div className="my-8 flex flex-col md:flex-row gap-8 justify-between">
             <div>
-              <h2 className="max-w-sm text-3xl md:text-5xl font-semibold mb-8">
+              <h2 className="max-w-md text-3xl md:text-5xl font-semibold mb-8">
                 {project?.name}
               </h2>
-              <p className="max-w-sm leading-relaxed">
-                Flora Fables is an online market web app that offers a variety
-                of flowers and vase-covered plants for sale. It aims to solve
-                some real world problems, such as: - supporting small businesses
-                and local communities by connecting customers with independent
-                florists and growers, and providing them with a platform to
-                showcase their work and earn income.
-              </p>
+              <p className="max-w-md leading-relaxed">{project?.description}</p>
             </div>
-            <div className="flex md:flex-col gap-12 justify-between">
+            <div className="justify-self-end flex sm:flex-row md:flex-col flex-col gap-12 sm:justify-between md:justify-normal">
               <div>
                 <h3 className="text-sm font-semibold mb-3 uppercase">Stack</h3>
                 <ul className="steps steps-vertical md:steps-horizontal step-primary">
-                  <li className="step step-primary">React</li>
-                  <li className="step step-primary">TypeScript</li>
-                  <li className="step step-primary">NextJS</li>
-                  <li className="step step-primary">TailwindCSS</li>
+                  {project?.stack.map((tech) => (
+                    <li className="step step-primary capitalize">{tech}</li>
+                  ))}
                 </ul>
               </div>
               <div className="flex flex-col gap-8 self-start">
                 <a
-                  href=""
-                  className="group hover:text-primary  flex gap-2 items-center duration-150"
+                  href={project?.sourceCode}
+                  target="_blank"
+                  className={`${
+                    project?.sourceCode
+                      ? "hover:text-primary"
+                      : "text-neutral-content/20 cursor-not-allowed"
+                  } group flex gap-2 items-center duration-150`}
                 >
                   <FaGithub className="w-6 h-6" />
-                  <span>Source Code</span>
-                  <FaArrowRight className="-translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 transition-all duration-300" />
+                  <span>
+                    Source Code
+                    {!project?.sourceCode && (
+                      <span className="text-sm ml-1">(Private)</span>
+                    )}
+                  </span>
+                  {project?.sourceCode && (
+                    <FaArrowRight className="-translate-x-2 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 transition-all duration-300" />
+                  )}
                 </a>
                 <a
-                  href=""
-                  className="group hover:text-primary flex gap-2 items-center duration-150"
+                  href={project?.website}
+                  target="_blank"
+                  className={`${
+                    project?.website
+                      ? "hover:text-primary"
+                      : "text-neutral-content/20 cursor-not-allowed"
+                  } group flex gap-2 items-center duration-150`}
                 >
                   <CiGlobe className="w-6 h-6" />
-                  <span>Open Project</span>{" "}
-                  <FaArrowRight className="-translate-x-5 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 transition-all duration-300" />
+                  <span>
+                    Open Project
+                    {!project?.website && (
+                      <span className="text-sm ml-1">(WIP)</span>
+                    )}
+                  </span>
+                  {project?.website && (
+                    <FaArrowRight className="-translate-x-2 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 transition-all duration-300" />
+                  )}
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="mockup-browser border border-base-300 bg-neutral">
+        <div className="mockup-browser border border-base-300 bg-neutral my-20">
           <div className="mockup-browser-toolbar">
             <div className="input border border-base-300 bg-neutral">
-              https://{project?.slug}.com
+              {project?.website || "http://localhost:{PORT}"}
             </div>
           </div>
           <div className="flex justify-center  border-t border-base-300 bg-neutral">
             <img
-              src={project?.image}
+              src={
+                project?.screenshots ? project.screenshots : project?.thumbnail
+              }
               alt=""
               className="max-w-full object-contain"
             />
@@ -111,7 +129,7 @@ const SingleProject = () => {
         </div>
         <div className="ml-auto mt-8 mb-16 group hover:cursor-pointer card card-compact w-72 h-32 bg-base-300 shadow-xl image-full">
           <figure className="opacity-0 group-hover:opacity-100 transition-all duration-500">
-            <img src={nextProject.image} alt={nextProject.name} />
+            <img src={nextProject.thumbnail} alt={nextProject.name} />
           </figure>
           <div className="card-body">
             <p>Next project</p>

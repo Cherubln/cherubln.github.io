@@ -21,7 +21,7 @@ const Home = () => {
           Hi there,
           <br /> I&apos;m Cherubin
           <br />
-          <span className="relative after:block after:left-0 after:-bottom-1 after:-top-1 after:absolute after:bg-base-100 after:right-0 after:animate-progress before:block before:left-0 before:h-full before:top-0 before:absolute before:bg-base-content before:w-0.5  before:z-10 before:animate-[fade_.48s_linear_infinite_alternate,progress_3s_steps(30)_3s_forwards] ">
+          <span className="relative after:block after:left-0 after:-bottom-1 after:-top-1 after:absolute after:bg-base-100 after:right-0 after:animate-progress before:block before:left-0 before:h-full before:top-0 before:absolute before:bg-base-content before:w-0.5  before:z-10 before:animate-[fade_.48s_linear_infinite_alternate,progress_3s_steps(30)_2s_forwards] ">
             Software
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent ml-2">
               Developer.

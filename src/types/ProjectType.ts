@@ -1,12 +1,11 @@
 export type ProjectType = {
-  name: string;
   category: string;
-  image: string;
-  slug: string;
   description: string;
-  website: string;
-  stack: string[];
-  sourceCode: string;
-  thumbnail: string;
+  name: string;
   screenshots: string;
+  slug: string;
+  sourceCode?: string;
+  stack: string[];
+  thumbnail: string;
+  website?: string;
 };
