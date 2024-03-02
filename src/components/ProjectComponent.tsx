@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Project = ({ project }: { project: ProjectType }) => {
   return (
-    <div className="card card-compact rounded-lg  max-w-sm h-80 bg-base-300 shadow-xl group cursor-pointer overflow-hidden">
+    <div className="card card-compact rounded-lg max-w-xs h-80 bg-base-300 shadow-xl group cursor-pointer overflow-hidden">
       <figure>
         <img
           src={project.thumbnail}
@@ -15,7 +15,10 @@ const Project = ({ project }: { project: ProjectType }) => {
       </figure>
       <div className="card-body bg-neutral">
         <h2 className="card-title font-light">{project.name}</h2>
-        <p className="text-sm capitalize">{project.category} Development</p>
+        <p className="truncate">{project.description}</p>
+        <p className="capitalize text-neutral-content/40">
+          {project.category} Development
+        </p>
         <div className="card-actions self-end">
           <Link
             to={`/projects/${project.slug}`}

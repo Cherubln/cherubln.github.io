@@ -10,7 +10,7 @@ import Footer from "./Footer";
 const Root = () => {
   const [activeTab, setActiveTab] = useState("");
   return (
-    <div className="container mx-auto ">
+    <div className="max-w-5xl mx-auto">
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="px-8 md:px-16">
         <Home />

@@ -17,7 +17,7 @@ const SingleProject = () => {
 
   if (!project) return <NotFound />;
   return (
-    <div key={projectName} className="container mx-auto ">
+    <div key={projectName} className="max-w-5xl mx-auto ">
       <header className="navbar sticky top-0 z-50  bg-base-100 justify-between pt-6 pb-2 px-8 md:px-16 drop-shadow-lg sm:drop-shadow-none">
         <div className="md:order-2">
           <Logo />
@@ -51,7 +51,7 @@ const SingleProject = () => {
               <li>{project?.name}</li>
             </ul>
           </div>
-          <div className="my-8 flex flex-col md:flex-row gap-8 justify-between">
+          <div className="my-8 flex flex-col md:flex-row gap-20 justify-between">
             <div>
               <h2 className="max-w-md text-3xl md:text-5xl font-semibold mb-8">
                 {project?.name}
@@ -59,15 +59,27 @@ const SingleProject = () => {
               <p className="max-w-md leading-relaxed">{project?.description}</p>
             </div>
             <div className="justify-self-end flex sm:flex-row md:flex-col flex-col gap-12 sm:justify-between md:justify-normal">
-              <div>
-                <h3 className="text-sm font-semibold mb-3 uppercase">Stack</h3>
-                <ul className="steps steps-vertical md:steps-horizontal step-primary">
-                  {project?.stack.map((tech) => (
-                    <li className=" step step-primary capitalize">{tech}</li>
-                  ))}
-                </ul>
-              </div>
-              <div className="flex flex-col gap-8 self-start">
+              <div className="order-1 flex flex-col gap-8 self-start sm:order-2 md:order-1">
+                <a
+                  href={project?.website}
+                  target="_blank"
+                  className={`${
+                    project?.website
+                      ? "hover:text-primary"
+                      : "text-neutral-content/20 cursor-not-allowed"
+                  } group flex gap-2 items-center duration-150`}
+                >
+                  <CiGlobe className="w-7 h-7 -ml-0.5" />
+                  <span>
+                    Open Project
+                    {!project?.website && (
+                      <span className="text-sm ml-1">(WIP)</span>
+                    )}
+                  </span>
+                  {project?.website && (
+                    <FaArrowRight className="-translate-x-2 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 transition-all duration-300" />
+                  )}
+                </a>
                 <a
                   href={project?.sourceCode}
                   target="_blank"
@@ -88,26 +100,14 @@ const SingleProject = () => {
                     <FaArrowRight className="-translate-x-2 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 transition-all duration-300" />
                   )}
                 </a>
-                <a
-                  href={project?.website}
-                  target="_blank"
-                  className={`${
-                    project?.website
-                      ? "hover:text-primary"
-                      : "text-neutral-content/20 cursor-not-allowed"
-                  } group flex gap-2 items-center duration-150`}
-                >
-                  <CiGlobe className="w-6 h-6" />
-                  <span>
-                    Open Project
-                    {!project?.website && (
-                      <span className="text-sm ml-1">(WIP)</span>
-                    )}
-                  </span>
-                  {project?.website && (
-                    <FaArrowRight className="-translate-x-2 opacity-0 group-hover:opacity-100  group-hover:translate-x-0 transition-all duration-300" />
-                  )}
-                </a>
+              </div>
+              <div className="order-2 sm:order-1 md:order-2">
+                <h3 className="text-sm font-semibold mb-3 uppercase">Stack</h3>
+                <ul className="steps steps-vertical md:steps-horizontal step-primary">
+                  {project?.stack.map((tech) => (
+                    <li className=" step step-primary capitalize">{tech}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -134,7 +134,9 @@ const SingleProject = () => {
           </figure>
           <div className="card-body">
             <p>Next project</p>
-            <h2 className="card-title">{nextProject.name}</h2>
+            <h2 className="card-title text-primary group-hover:text-neutral-content">
+              {nextProject.name}
+            </h2>
             <div className="card-actions self-end">
               <Link
                 to={`/projects/${nextProject.slug}`}

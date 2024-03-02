@@ -23,7 +23,7 @@ const ProjectSection = () => {
         </div>
       </div>
       <div className="mt-16 mb-10">
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-center justify-center">
           <p>Filter by:</p>
           <ProjectsFilters
             projectsFilter={projectsFilter}
@@ -31,7 +31,7 @@ const ProjectSection = () => {
           />
         </div>
       </div>
-      <div className="flex flex-wrap gap-14 content-center justify-center">
+      <div className="flex flex-wrap gap-8 justify-center">
         <AnimatePresence>
           {projects.map((project, id) => {
             return (
