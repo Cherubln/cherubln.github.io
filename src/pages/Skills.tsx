@@ -8,9 +8,11 @@ const Skills = () => {
         Expertise
       </h2>
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-0">
-        {skillSet.map((skill, id) => {
-          return <SkillComponent key={id} skill={skill} />;
-        })}
+        <div className="join join-vertical lg:join-horizontal w-full">
+          {skillSet.map((skill, id) => {
+            return <SkillComponent key={id} skill={skill} />;
+          })}
+        </div>
       </div>
     </div>
   );
