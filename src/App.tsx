@@ -1,8 +1,8 @@
 import NotFound from "./components/NotFound";
 import SingleProject from "./pages/Projects/SingleProject";
 import Root from "./pages/Root";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-const router = createBrowserRouter([
+import { RouterProvider, createHashRouter } from "react-router-dom";
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,

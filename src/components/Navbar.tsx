@@ -1,6 +1,7 @@
 import Logo from "./LogoWrapper";
 import { HiMenuAlt2 } from "react-icons/hi";
 import navigations from "../constants/navigations";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = ({
   activeTab,
@@ -16,9 +17,9 @@ const Navbar = ({
         <div className={`hidden sm:flex  flex-row gap-10 items-start`}>
           {navigations.map((item, id) => {
             return (
-              <a
+              <HashLink
                 key={item}
-                href={`#${item}`}
+                to={`#${item}`}
                 onClick={() => {
                   setActiveTab(item);
                 }}
@@ -34,7 +35,7 @@ const Navbar = ({
                   0{++id}
                 </span>
                 {item}
-              </a>
+              </HashLink>
             );
           })}
         </div>
