@@ -18,6 +18,7 @@ const Navbar = ({
           {navigations.map((item, id) => {
             return (
               <HashLink
+                unstable_viewTransition
                 key={item}
                 to={`#${item}`}
                 onClick={() => {
@@ -49,22 +50,19 @@ const Navbar = ({
           >
             {navigations.map((item) => {
               return (
-                <li
+                <HashLink
+                  unstable_viewTransition
+                  to={`#${item}`}
                   key={item}
-                  className="list-none list-outside p-1 font-semibold   cursor-pointer"
+                  className={`w-full relative  p-1 font-semibold   cursor-pointer ${
+                    activeTab === item && "text-primary "
+                  }`}
+                  onClick={() => {
+                    setActiveTab(item);
+                  }}
                 >
-                  <a
-                    href={`#${item}`}
-                    className={`w-full relative  ${
-                      activeTab === item && "text-primary "
-                    }`}
-                    onClick={() => {
-                      setActiveTab(item);
-                    }}
-                  >
-                    {item}
-                  </a>
-                </li>
+                  {item}
+                </HashLink>
               );
             })}
           </ul>
