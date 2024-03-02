@@ -1,6 +1,6 @@
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { Link } from "react-router-dom";
-import notFound from "../../public/404trans.png";
+import notFound from "../assets/404trans.png";
 
 const NotFound = () => {
   return (
