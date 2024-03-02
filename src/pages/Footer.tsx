@@ -5,7 +5,7 @@ const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer items-center p-4  text-neutral-content">
+    <footer className="footer justify-center md:justify-normal items-center p-4  text-neutral-content">
       <aside className="items-center grid-flow-col">
         <img src={logo} alt="logo" className="w-6" />
         <div>

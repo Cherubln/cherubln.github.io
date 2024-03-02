@@ -3,7 +3,7 @@ import SkillComponent from "../components/SkillComponent";
 
 const Skills = () => {
   return (
-    <div id="Skills" className="py-14">
+    <div id="Skills" className="pt-14">
       <h2 className="text-3xl md:text-5xl font-bold  text-center my-8">
         Expertise
       </h2>

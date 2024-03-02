@@ -9,7 +9,7 @@ const ProjectSection = () => {
   const projects = useProjects(projectsFilter);
 
   return (
-    <div id="Work" className="py-14">
+    <div id="Work" className="pt-14">
       <div>
         <h2 className="text-3xl md:text-5xl font-bold  text-center my-8">
           Work

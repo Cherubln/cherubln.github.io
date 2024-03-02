@@ -17,7 +17,7 @@ const SingleProject = () => {
 
   if (!project) return <NotFound />;
   return (
-    <div key={projectName} className="max-w-5xl mx-auto ">
+    <div key={projectName} className="max-w-6xl mx-auto">
       <header className="navbar sticky top-0 z-50  bg-base-100 justify-between pt-6 pb-2 px-8 md:px-16 drop-shadow-lg sm:drop-shadow-none">
         <div className="md:order-2">
           <Logo />
@@ -51,7 +51,7 @@ const SingleProject = () => {
               <li>{project?.name}</li>
             </ul>
           </div>
-          <div className="my-8 flex flex-col md:flex-row gap-20 justify-between">
+          <div className="my-8 flex flex-col md:flex-row gap-10 md:gap-20 justify-between">
             <div>
               <h2 className="max-w-md text-3xl md:text-5xl font-semibold mb-8">
                 {project?.name}
@@ -105,7 +105,9 @@ const SingleProject = () => {
                 <h3 className="text-sm font-semibold mb-3 uppercase">Stack</h3>
                 <ul className="steps steps-vertical md:steps-horizontal step-primary">
                   {project?.stack.map((tech) => (
-                    <li className=" step step-primary capitalize">{tech}</li>
+                    <li key={tech} className=" step step-primary capitalize">
+                      {tech}
+                    </li>
                   ))}
                 </ul>
               </div>

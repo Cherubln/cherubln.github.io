@@ -3,7 +3,7 @@ import ExperienceComponent from "../components/ExperienceComponent";
 
 const ExperienceSection = () => {
   return (
-    <div id="Experience" className="py-14">
+    <div id="Experience" className="pt-14">
       <h2 className="text-3xl md:text-5xl font-bold  text-center my-8">
         Experience
       </h2>
