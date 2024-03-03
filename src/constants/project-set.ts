@@ -20,7 +20,7 @@ const projectSet: ProjectType[] = [
     screenshots: "",
     slug: "flora-fables",
     sourceCode: "https://github.com/Cherubln/flora-fables",
-    stack: ["React", "TS", "Next", "Tailwind"],
+    stack: ["React", "TS", "NextJS", "Tailwind"],
     thumbnail: floraFablesThumbnail,
   },
   {
@@ -87,7 +87,7 @@ const projectSet: ProjectType[] = [
     screenshots: "",
     slug: "dialogue",
     sourceCode: "https://github.com/Cherubln/dialogue",
-    stack: ["TS", "React", "Next", "DaisyUI"],
+    stack: ["TS", "React", "NextJS", "DaisyUI"],
     thumbnail: dialogueThumbnail,
     website: "https://dialogue-app-production.up.railway.app/",
   },
