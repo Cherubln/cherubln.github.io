@@ -25,7 +25,7 @@ const SingleProject = () => {
         <Link
           unstable_viewTransition
           to={"/"}
-          className="md:order-1 btn btn-ghost md:btn-circle md:bg-neutral"
+          className="md:order-1 btn btn-ghost md:btn-circle"
         >
           <MdOutlineArrowBackIosNew className="w-6 h-6" />
         </Link>
