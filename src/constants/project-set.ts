@@ -87,7 +87,7 @@ const projectSet: ProjectType[] = [
     screenshots: "",
     slug: "dialogue",
     sourceCode: "https://github.com/Cherubln/dialogue",
-    stack: ["TS", "React", "DaisyUI"],
+    stack: ["TS", "React", "Next", "DaisyUI"],
     thumbnail: dialogueThumbnail,
     website: "https://dialogue-app-production.up.railway.app/",
   },
