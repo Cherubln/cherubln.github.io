@@ -53,10 +53,10 @@ const SingleProject = () => {
           </div>
           <div className="my-8 flex flex-col md:flex-row gap-10 md:gap-20 justify-between">
             <div>
-              <h2 className="max-w-md text-3xl md:text-5xl font-semibold mb-8">
+              <h2 className="max-w-lg text-3xl md:text-5xl font-semibold mb-8">
                 {project?.name}
               </h2>
-              <p className="max-w-md leading-relaxed">{project?.description}</p>
+              <p className="max-w-lg leading-relaxed">{project?.description}</p>
             </div>
             <div className="justify-self-end flex sm:flex-row md:flex-col flex-col gap-12 sm:justify-between md:justify-normal">
               <div className="order-1 flex flex-col gap-8 self-start sm:order-2 md:order-1">
