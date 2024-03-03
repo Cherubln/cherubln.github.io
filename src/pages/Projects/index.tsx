@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Project from "../../components/ProjectComponent";
+import Project from "../../components/ProjectCard";
 import ProjectsFilters from "../../components/ProjectFilters";
 import useProjects from "../../hooks/useProjects";
 import { AnimatePresence, motion } from "framer-motion";
