@@ -22,7 +22,7 @@ const config: Config = {
       },
       animation: {
         progress: "progress 3s steps(30) 2s forwards ",
-        fade: "fade 0.45s linear 2s",
+        fade: "fade",
       },
     },
   },
