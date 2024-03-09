@@ -26,9 +26,12 @@ const SingleProject = () => {
           <MdOutlineArrowBackIosNew className="w-6 h-6" />
         </Link>
       </header>
-      <div className="px-8 md:px-16">
+      <div className="relative px-8 md:px-16">
+        <div className="mt-8 mb-3 capitalize badge badge-neutral">
+          {project.category} Development
+        </div>
+        <ProjectComponents.BreadcrumbsPath path={project.name} />
         <div className="my-8">
-          <ProjectComponents.BreadcrumbsPath path={project.name} />
           <div className="my-8 flex flex-col md:flex-row gap-10 md:gap-20 justify-between">
             <ProjectComponents.ProjectDescription project={project} />
             <ProjectComponents.ProjectStack project={project} />
