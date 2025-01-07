@@ -46,7 +46,7 @@ const projectSet: ProjectType[] = [
     sourceCode: "https://github.com/Cherubln/dialogue",
     stack: ["TS", "React", "NextJS", "DaisyUI"],
     thumbnail: dialogueThumbnail,
-    website: "https://dialogue-app-production.up.railway.app/",
+    website: "https://dialogue-app-project.vercel.app/",
   },
   {
     category: "web",
