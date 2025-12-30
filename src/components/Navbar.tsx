@@ -18,7 +18,7 @@ const Navbar = ({
           {navigations.map((item, id) => {
             return (
               <HashLink
-                unstable_viewTransition
+                viewTransition
                 key={item}
                 to={`#${item}`}
                 onClick={() => {
@@ -51,7 +51,7 @@ const Navbar = ({
             {navigations.map((item) => {
               return (
                 <HashLink
-                  unstable_viewTransition
+                  viewTransition
                   to={`#${item}`}
                   key={item}
                   className={`w-full relative  p-1 font-semibold   cursor-pointer ${

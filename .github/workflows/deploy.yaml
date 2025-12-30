@@ -1,10 +1,10 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Github Pages Deployment 
+name: Github Pages Deployment
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['main']
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,11 +17,11 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
+  # Single deploy job
   deploy:
     environment:
       name: github-pages
@@ -30,22 +30,32 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v3
+
+      # Set up Bun
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: 18
-          cache: 'npm'
+          bun-version: latest
+
+      # Install dependencies with Bun
       - name: Install dependencies
-        run: npm install
+        run: bun install
+
+      # Build with Bun
       - name: Build
-        run: npm run build
+        run: bun run build
+
+      # Configure GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      # Upload build output directory
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload build output directory
-          path: './dist'
+          path: "./dist"
+
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

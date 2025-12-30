@@ -5,12 +5,12 @@ export const BreadcrumbsPath = ({ path }: { path: string }) => {
     <div className="bg-base-100 sticky top-20 z-30 text-sm breadcrumbs">
       <ul>
         <li>
-          <Link to={"/"} unstable_viewTransition className="hover:link">
+          <Link to={"/"} viewTransition className="hover:link">
             Home
           </Link>
         </li>
         <li>
-          <Link className="hover:link" to={"/#Work"} unstable_viewTransition>
+          <Link className="hover:link" to={"/#Work"} viewTransition>
             Projects
           </Link>
         </li>

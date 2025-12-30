@@ -19,7 +19,7 @@ const SingleProject = () => {
           <Logo />
         </div>
         <Link
-          unstable_viewTransition
+          viewTransition
           to={"/"}
           className="md:order-1 btn btn-ghost md:btn-circle"
         >

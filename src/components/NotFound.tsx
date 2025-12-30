@@ -11,11 +11,7 @@ const NotFound = () => {
           Sorry, we can't find that page! <br />
           Don't worry though, everything is STILL AWESOME!
         </p>
-        <Link
-          to={"/"}
-          unstable_viewTransition
-          className="btn btn-outline btn-primary"
-        >
+        <Link to={"/"} viewTransition className="btn btn-outline btn-primary">
           <MdOutlineArrowBackIosNew className="animate-pulse w-5 h-5" />
           <span>Go back</span>
         </Link>

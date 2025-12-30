@@ -1,6 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: sunset --default;
+}
+
+@theme {
+  --animate-progress: progress 3s steps(30) 2s forwards;
+  --animate-fading-progress:
+    progress 3s steps(30) 2s forwards, fade 0.48s linear infinite alternate;
+
+  @keyframes progress {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 
 :root {
   scroll-behavior: smooth;

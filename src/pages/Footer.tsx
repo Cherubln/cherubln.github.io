@@ -19,7 +19,7 @@ const FooterSection = () => {
             </label>
             <div
               tabIndex={0}
-              className="card compact dropdown-content z-[1] shadow bg-neutral rounded-box w-52"
+              className="card compact dropdown-content z-1 shadow bg-neutral rounded-box w-52"
             >
               <div className="card-body">
                 <p>
@@ -28,7 +28,7 @@ const FooterSection = () => {
                     <a
                       href="https://github.com/Cherubln"
                       target="_blank"
-                      className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent hover:underline ml-1"
+                      className="text-transparent bg-clip-text bg-linear-to-r from-primary via-secondary to-accent hover:underline ml-1"
                     >
                       Github page
                     </a>
