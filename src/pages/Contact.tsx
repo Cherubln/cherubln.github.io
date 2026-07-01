@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div id="Contact" className="my-14">
+    <div id="Contact" className="my-16">
       <h2 className="text-3xl font-bold  my-8 ">Available for opportunities</h2>
       <div className="flex flex-col gap-4 max-w-sm">
         <p>
