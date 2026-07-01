@@ -4,19 +4,39 @@ import { BsArrowUpRightSquareFill } from "react-icons/bs";
 
 import andelaLogo from "../assets/andela_logo.jpg";
 import heptaLogo from "../assets/heptanalytics_logo.jpg";
+import apertacuraLogo from "../assets/apertacura_logo.jpg";
 import uplusLogo from "../assets/uplus_mutual_partners_logo.jpg";
 
 const experienceSet: ExperienceType[] = [
   {
-    role: "Front-End Developer",
+    role: "Lead Front-End Developer",
     company: "Uplus Mutual Partners",
     duration: "2022 - Present",
     location: { name: "Hybrid", Icon: ImLocation2 },
     website: { name: "uplus.rw", Icon: BsArrowUpRightSquareFill },
     description:
-      "Developing and maintaining front-end solutions for web applications, particularly in the fintech domain. This involves creating client or internal data visualization systems using React/TypeScript and the Tailwind CSS framework.",
+      "Leading, developing and maintaining front-end solutions for web applications, particularly in the fintech domain. This involves creating client or internal data visualization systems using React/TypeScript and the Tailwind CSS framework.",
     skills: ["JavaScript", "TypeScript", "React", "Redux", "Tailwindcss"],
     logo: uplusLogo,
+  },
+  {
+    role: "Backend Developer",
+    company: "ApertaCura",
+    duration: "August 2024 - May 2025",
+    location: { name: "Remote", Icon: ImLocation2 },
+    website: { name: "apertacura.com", Icon: BsArrowUpRightSquareFill },
+    description:
+      "Leading the development of backend solutions for web applications, particularly in the Healthcare domain helping people to take charge of their health through accessible and innovative solutions.",
+    skills: [
+      "JavaScript",
+      "TypeScript",
+      "NodeJS",
+      "Python",
+      "ExpressJS",
+      "MongoDB",
+      "Microsoft azure",
+    ],
+    logo: apertacuraLogo,
   },
   {
     role: " Software Developer",

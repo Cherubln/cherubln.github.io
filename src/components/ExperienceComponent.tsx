@@ -53,7 +53,7 @@ const ExperienceComponent = ({
         <img
           src={experience.logo}
           alt="andela logo"
-          className="max-w-min rounded-badge order-1 sm:order-2"
+          className="max-w-min max-h-min rounded-md order-1 sm:order-2"
         />
       </div>
     </div>

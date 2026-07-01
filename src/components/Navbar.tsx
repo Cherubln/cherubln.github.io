@@ -24,7 +24,7 @@ const Navbar = ({
                 onClick={() => {
                   setActiveTab(item);
                 }}
-                className={`relative group font-semibold sm:border-none sm:after:block sm:after:mt-1 sm:after:w-0 sm:after:h-0.5 sm:after:hover:w-full sm:after:duration-300 sm:after:bg-primary w-full ${
+                className={`relative group font-semibold sm:border-none sm:after:block sm:after:mt-1 sm:after:w-0 sm:after:h-0.5 sm:hover:after:w-full sm:after:duration-300 sm:after:bg-primary w-full  ${
                   activeTab === item && "text-primary "
                 }`}
               >

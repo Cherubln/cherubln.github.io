@@ -14,7 +14,7 @@ const skillSet: SkillType[] = [
     Icon: CiDesktop,
     heading: "Front-end Development",
     content:
-      "Over 3 years of development experience in building web apps with HTML, CSS, JS, React and NextJS.",
+      "Over 5 years of development experience in building web apps with HTML, CSS, JS, React and NextJS.",
   },
   {
     Icon: TbBrandReactNative,

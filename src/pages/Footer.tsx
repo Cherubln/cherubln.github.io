@@ -5,8 +5,8 @@ const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer justify-center md:justify-normal items-center p-4  text-neutral-content">
-      <aside className="items-center grid-flow-col">
+    <footer className="footer grid-flow-col p-4  text-neutral-content">
+      <aside className="place-items-center grid-flow-col place-self-center md:place-self-start">
         <img src={logo} alt="logo" className="w-6" />
         <div>
           <span>Built by</span>
@@ -41,7 +41,7 @@ const FooterSection = () => {
           <span>© {currentYear}</span>
         </div>
       </aside>
-      <nav className="hidden md:grid grid-flow-col gap-x-4 place-self-center justify-self-end">
+      <nav className="hidden md:grid grid-flow-col gap-x-4 place-self-end">
         <a
           href="https://twitter.com/cherubln"
           target="_blank"
