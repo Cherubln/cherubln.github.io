@@ -22,7 +22,7 @@ const experienceSet: ExperienceType[] = [
   {
     role: "Backend Developer",
     company: "ApertaCura",
-    duration: "August 2024 - May 2025",
+    duration: "2024 - 2025",
     location: { name: "Remote", Icon: ImLocation2 },
     website: { name: "apertacura.com", Icon: BsArrowUpRightSquareFill },
     description:
@@ -41,7 +41,7 @@ const experienceSet: ExperienceType[] = [
   {
     role: " Software Developer",
     company: "Hepta Analytics",
-    duration: "Jan 2021 - May 2021",
+    duration: "2021 - May 2021",
     location: { name: "Remote", Icon: ImLocation2 },
     website: { name: "heptanalytics.com", Icon: BsArrowUpRightSquareFill },
     description:
